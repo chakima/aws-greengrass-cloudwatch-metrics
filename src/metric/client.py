@@ -12,7 +12,7 @@ logger = utils.logger
 
 
 class CloudWatchClient:
-    def __init__(self, region):
+    def __init__(self, region):  
         # Only look for Credentials from ContainerProvider
         container_creds_resolver = credentials.CredentialResolver([credentials.ContainerProvider()])
         container_creds = container_creds_resolver.load_credentials()
